@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnTumKayitlar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -38,6 +38,7 @@
             this.btnParcaBekliyor = new System.Windows.Forms.Button();
             this.btnTeslimEdildi = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnIade = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -46,14 +47,14 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 18);
             this.dataGridView1.Name = "dataGridView1";
@@ -67,7 +68,7 @@
             // 
             this.btnTumKayitlar.Font = new System.Drawing.Font("Candara", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTumKayitlar.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnTumKayitlar.Location = new System.Drawing.Point(566, 21);
+            this.btnTumKayitlar.Location = new System.Drawing.Point(692, 21);
             this.btnTumKayitlar.Name = "btnTumKayitlar";
             this.btnTumKayitlar.Size = new System.Drawing.Size(120, 74);
             this.btnTumKayitlar.TabIndex = 4;
@@ -77,6 +78,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnIade);
             this.groupBox1.Controls.Add(this.lblBaslik);
             this.groupBox1.Controls.Add(this.btnHazir);
             this.groupBox1.Controls.Add(this.btnIslemAsamasinda);
@@ -164,6 +166,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sonuçlar";
             // 
+            // btnIade
+            // 
+            this.btnIade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnIade.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIade.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIade.Location = new System.Drawing.Point(566, 21);
+            this.btnIade.Name = "btnIade";
+            this.btnIade.Size = new System.Drawing.Size(120, 74);
+            this.btnIade.TabIndex = 7;
+            this.btnIade.Text = "İADE";
+            this.btnIade.UseVisualStyleBackColor = false;
+            this.btnIade.Click += new System.EventHandler(this.btnParcaBekliyor_Click);
+            // 
             // Sorgular
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -192,5 +207,6 @@
         private System.Windows.Forms.Button btnParcaBekliyor;
         private System.Windows.Forms.Button btnTeslimEdildi;
         private System.Windows.Forms.Label lblBaslik;
+        private System.Windows.Forms.Button btnIade;
     }
 }
