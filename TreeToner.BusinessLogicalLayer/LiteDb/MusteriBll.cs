@@ -1,6 +1,7 @@
 ﻿using LiteDB;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TreeToner.BusinessLogicalLayer.Abstract;
 using TreeToner.DatabaseLogicalLayer.LiteDb;
 using TreeToner.Entities;
@@ -16,9 +17,21 @@ namespace TreeToner.BusinessLogicalLayer.LiteDb
             _dbControl = new DBControl();
             _musteriDll = new MusteriDll();
         }
-        public void Add(Musteri Entity)
+        public int Add(Musteri Entity)
         {
-            _musteriDll.Add(Entity);
+            //aynı isme sahip müşteri eklemesin.
+            var liste = GetAll();
+            var results = liste.Where(I => I.adiSoyadi == Entity.adiSoyadi).FirstOrDefault();
+            if (results==null) 
+            {
+                _musteriDll.Add(Entity);
+                return 1;
+            }
+            else
+            {
+                bllMesajlar.warning("Eklemek istediğiniz isimde kayıt mevcuttur. Başka bir isimle kaydetmeyi deneyin!");
+                return -1;//Ekleme işlemi yapılmadı.
+            }
         }
 
         public void Delete(Musteri Entity)
@@ -44,6 +57,12 @@ namespace TreeToner.BusinessLogicalLayer.LiteDb
         public int ToplamMusteriSayisi()
         {
             return _musteriDll.GetAll().Count;
+        }
+
+        public List<Musteri> Search(string paramtext)
+        {
+            return _musteriDll.Search(paramtext);
+            
         }
     }
 }

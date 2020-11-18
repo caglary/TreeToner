@@ -13,9 +13,10 @@ namespace TreeToner.BusinessLogicalLayer.LiteDb
         {
             _dll = new KayitlarDll();
         }
-        public void Add(Kayit Entity)
+        public int Add(Kayit Entity)
         {
             _dll.Add(Entity);
+            return 1;
         }
 
         public void Delete(Kayit Entity)

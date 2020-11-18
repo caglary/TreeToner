@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusteriAnaEkran));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.txtAdSoyad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,6 +59,10 @@
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnExcel = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtArama = new System.Windows.Forms.TextBox();
+            this.btnArama = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -66,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgwListe)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -170,11 +175,11 @@
             // 
             // txtAdres
             // 
-            this.txtAdres.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdres.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAdres.Location = new System.Drawing.Point(472, 143);
             this.txtAdres.Multiline = true;
             this.txtAdres.Name = "txtAdres";
-            this.txtAdres.Size = new System.Drawing.Size(384, 135);
+            this.txtAdres.Size = new System.Drawing.Size(267, 136);
             this.txtAdres.TabIndex = 6;
             // 
             // groupBox1
@@ -199,7 +204,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1554, 300);
+            this.groupBox1.Size = new System.Drawing.Size(1554, 294);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             // 
@@ -219,7 +224,7 @@
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox4.Location = new System.Drawing.Point(1264, 23);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(287, 274);
+            this.groupBox4.Size = new System.Drawing.Size(287, 268);
             this.groupBox4.TabIndex = 29;
             this.groupBox4.TabStop = false;
             // 
@@ -261,14 +266,14 @@
             // 
             this.dgwListe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgwListe.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgwListe.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgwListe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgwListe.Location = new System.Drawing.Point(3, 18);
             this.dgwListe.MultiSelect = false;
@@ -277,7 +282,7 @@
             this.dgwListe.RowHeadersWidth = 51;
             this.dgwListe.RowTemplate.Height = 24;
             this.dgwListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgwListe.Size = new System.Drawing.Size(1524, 248);
+            this.dgwListe.Size = new System.Drawing.Size(1536, 178);
             this.dgwListe.TabIndex = 19;
             this.dgwListe.Click += new System.EventHandler(this.dataGridView1_Click);
             this.dgwListe.DoubleClick += new System.EventHandler(this.btnKayit_Click);
@@ -289,9 +294,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.AutoSize = true;
             this.groupBox3.Controls.Add(this.dgwListe);
-            this.groupBox3.Location = new System.Drawing.Point(12, 420);
+            this.groupBox3.Location = new System.Drawing.Point(0, 490);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1530, 269);
+            this.groupBox3.Size = new System.Drawing.Size(1542, 199);
             this.groupBox3.TabIndex = 20;
             this.groupBox3.TabStop = false;
             // 
@@ -307,7 +312,7 @@
             this.groupBox2.Controls.Add(this.btnExcel);
             this.groupBox2.Controls.Add(this.btnSil);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox2.Location = new System.Drawing.Point(0, 300);
+            this.groupBox2.Location = new System.Drawing.Point(0, 294);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1554, 114);
             this.groupBox2.TabIndex = 21;
@@ -315,11 +320,14 @@
             // 
             // btnGetAll
             // 
+            this.btnGetAll.Image = ((System.Drawing.Image)(resources.GetObject("btnGetAll.Image")));
             this.btnGetAll.Location = new System.Drawing.Point(590, 21);
             this.btnGetAll.Name = "btnGetAll";
             this.btnGetAll.Size = new System.Drawing.Size(125, 70);
             this.btnGetAll.TabIndex = 13;
-            this.btnGetAll.Text = "Tüm Liste";
+            this.btnGetAll.Text = "TÜM LİSTE";
+            this.btnGetAll.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGetAll.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGetAll.UseVisualStyleBackColor = true;
             this.btnGetAll.Click += new System.EventHandler(this.btnGetAll_Click);
             // 
@@ -421,12 +429,59 @@
             this.btnSil.UseVisualStyleBackColor = true;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox5.Controls.Add(this.label1);
+            this.groupBox5.Controls.Add(this.txtArama);
+            this.groupBox5.Controls.Add(this.btnArama);
+            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox5.Location = new System.Drawing.Point(0, 408);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(1554, 76);
+            this.groupBox5.TabIndex = 22;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Arama";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "KİŞİ/KURUM ADI:";
+            // 
+            // txtArama
+            // 
+            this.txtArama.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtArama.Location = new System.Drawing.Point(144, 26);
+            this.txtArama.Name = "txtArama";
+            this.txtArama.Size = new System.Drawing.Size(312, 28);
+            this.txtArama.TabIndex = 1;
+            // 
+            // btnArama
+            // 
+            this.btnArama.Image = ((System.Drawing.Image)(resources.GetObject("btnArama.Image")));
+            this.btnArama.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnArama.Location = new System.Drawing.Point(472, 22);
+            this.btnArama.Margin = new System.Windows.Forms.Padding(4);
+            this.btnArama.Name = "btnArama";
+            this.btnArama.Size = new System.Drawing.Size(123, 37);
+            this.btnArama.TabIndex = 12;
+            this.btnArama.Text = "Ara";
+            this.btnArama.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnArama.UseVisualStyleBackColor = true;
+            this.btnArama.Click += new System.EventHandler(this.btnArama_Click);
+            // 
             // MusteriAnaEkran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1554, 689);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
@@ -445,6 +500,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgwListe)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -480,5 +537,9 @@
         private System.Windows.Forms.Button btnSorgu;
         private System.Windows.Forms.Label lblToplamKayit;
         private System.Windows.Forms.Button btnGetAll;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox txtArama;
+        private System.Windows.Forms.Button btnArama;
     }
 }

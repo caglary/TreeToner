@@ -5,7 +5,7 @@ namespace TreeToner.BusinessLogicalLayer.Abstract
     public interface IBaseBll<T>
     {
 
-        void Add(T Entity);
+        int Add(T Entity);
         void Update(T Entity);
         void Delete(T Entity);
        

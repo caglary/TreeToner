@@ -1,4 +1,5 @@
 ﻿using LiteDB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TreeToner.Entities;
@@ -57,6 +58,15 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
             {
                 var collection = db.GetCollection<Entities.Musteri>();
                 return collection.FindAll().ToList();
+            }
+        }
+
+        public List<Musteri> Search(string paramtext)
+        {
+            using (var db = new LiteDatabase(dBControl.DatabaseConnectionString))
+            {
+                var collection = db.GetCollection<Entities.Musteri>();
+                return collection.Find(I => I.adiSoyadi.Contains(paramtext)).ToList();
             }
         }
 

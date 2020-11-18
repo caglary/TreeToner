@@ -41,6 +41,7 @@ namespace TreeToner.UWFA
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
+
             Musteri m = new Musteri();
             m.id = ObjectId.NewObjectId();
             m.adiSoyadi = txtAdSoyad.Text;
@@ -50,8 +51,9 @@ namespace TreeToner.UWFA
             m.mail = txtEmail.Text;
             m.adres = txtAdres.Text;
             m.tarih = m.id.CreationTime;
-            musteriBll.Add(m);
-            listeGetir(m.id);
+            int result = musteriBll.Add(m);
+            if (result != -1) listeGetir(m.id);
+
 
         }
 
@@ -92,7 +94,7 @@ namespace TreeToner.UWFA
         {
 
             DialogResult soru = new DialogResult();
-            soru = MessageBox.Show($"{txtAdSoyad.Text} kisimli kaydı silmek istiyor musunuz?", "BİLGİLENDİRME", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            soru = MessageBox.Show($"{txtAdSoyad.Text} isimli kaydı silmek istiyor musunuz?", "BİLGİLENDİRME", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (soru == DialogResult.Yes)
             {
                 musteriBll.Delete(activeMusteri);
@@ -150,11 +152,11 @@ namespace TreeToner.UWFA
             string currentDirectory = Directory.GetCurrentDirectory();
             string file = $"{currentDirectory}\\Treetoner.db";
             FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
-            DialogResult result =folderBrowserDialog.ShowDialog();
-            if (result==DialogResult.OK)
+            DialogResult result = folderBrowserDialog.ShowDialog();
+            if (result == DialogResult.OK)
             {
-                string selectedPath=folderBrowserDialog.SelectedPath;
-                File.Copy(file, selectedPath + "\\yedek_Treetoner.db",true);
+                string selectedPath = folderBrowserDialog.SelectedPath;
+                File.Copy(file, selectedPath + "\\yedek_Treetoner.db", true);
                 bllMesajlar.warning($"{selectedPath} içerisine yedek_Treetoner.db olarak yedek alındı.");
             }
 
@@ -168,7 +170,7 @@ namespace TreeToner.UWFA
             string file = $"{currentDirectory}\\Treetoner.db";
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.ShowDialog();
-            string filename=openFileDialog.FileName;
+            string filename = openFileDialog.FileName;
             File.Copy(filename, file, true);
             bllMesajlar.warning($"Yedek yükleme işlemi tamamlandı.");
             listeGetir();
@@ -235,6 +237,11 @@ namespace TreeToner.UWFA
 
                 }
             }
+        }
+
+        private void btnArama_Click(object sender, EventArgs e)
+        {
+            dgwListe.DataSource= musteriBll.Search(txtArama.Text);
         }
     }
 }
