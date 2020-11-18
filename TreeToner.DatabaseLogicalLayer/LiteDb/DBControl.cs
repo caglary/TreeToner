@@ -1,5 +1,4 @@
 ﻿using System.IO;
-
 namespace TreeToner.DatabaseLogicalLayer.LiteDb
 {
     public class DBControl
@@ -18,6 +17,5 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
             path = $"{currentDirectory}\\Treetoner.db";
           
         }
-
     }
 }

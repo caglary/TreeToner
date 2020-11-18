@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace TreeToner.UWFA
 {
     public static class FormManager
@@ -26,8 +25,6 @@ namespace TreeToner.UWFA
         //        frm.Show();
         //    }
            
-
-
         //}
         //public static void OpenMusteriAnaEkran()
         //{
@@ -36,7 +33,5 @@ namespace TreeToner.UWFA
         //        frm.Show();
             
         //}
-
-
     }
 }

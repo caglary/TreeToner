@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using TreeToner.Entities;
-
 namespace TreeToner.DatabaseLogicalLayer.LiteDb
 {
     public class KayitlarDll : IBaseOfDLL<Kayit>
@@ -14,7 +13,6 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
             dBControl = new DBControl();
            
         }
-
         public bool Add(Kayit Entity)
         {
             using (var db=new LiteDatabase(dBControl.DatabaseConnectionString))
@@ -26,26 +24,21 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
                 }
                 catch (Exception)
                 {
-
                     return false;
                 }
                 
                
             }
         }
-
         public bool Delete(Kayit Entity)
         {
             using (var db = new LiteDatabase(dBControl.DatabaseConnectionString))
             {
                 var collection = db.GetCollection<Kayit>();
                 return collection.Delete(Entity.id);
-
             }
         }
-
      
-
         public Kayit Get(ObjectId idNumber)
         {
             using (var db = new LiteDatabase(dBControl.DatabaseConnectionString))
@@ -55,7 +48,6 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
                 
             }
         }
-
         public List<Kayit> GetAll()
         {
             using (var db = new LiteDatabase(dBControl.DatabaseConnectionString))
@@ -72,7 +64,6 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
                 return collection.FindAll().Where(I=>I.musteriId==idNumber).ToList();
             }
         }
-
         public bool Update(Kayit Entity)
         {
             using (var db=new LiteDatabase(dBControl.DatabaseConnectionString))

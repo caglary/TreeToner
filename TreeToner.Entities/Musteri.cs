@@ -1,6 +1,5 @@
 ﻿using LiteDB;
 using System;
-
 namespace TreeToner.Entities
 {
     public class Musteri
@@ -13,6 +12,5 @@ namespace TreeToner.Entities
         public string mail { get; set; }
         public string adres { get; set; }
         public DateTime tarih { get; set; }
-
     }
 }

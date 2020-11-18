@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace TreeToner.UWFA
 {
     static class Program
@@ -16,7 +15,6 @@ namespace TreeToner.UWFA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
             Application.Run(new MusteriAnaEkran());
         }
     }

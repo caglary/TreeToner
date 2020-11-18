@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TreeToner.BusinessLogicalLayer.Abstract;
 using TreeToner.DatabaseLogicalLayer.LiteDb;
 using TreeToner.Entities;
-
 namespace TreeToner.BusinessLogicalLayer.LiteDb
 {
     public class KayitlarBll : IBaseBll<Entities.Kayit>
@@ -18,7 +17,6 @@ namespace TreeToner.BusinessLogicalLayer.LiteDb
             _dll.Add(Entity);
             return 1;
         }
-
         public void Delete(Kayit Entity)
         {
             _dll.Delete(Entity);
@@ -28,7 +26,6 @@ namespace TreeToner.BusinessLogicalLayer.LiteDb
         {
            return _dll.Get(IdNumber);
         }
-
         public List<Kayit> GetAll()
         {
             return _dll.GetAll();
@@ -37,7 +34,6 @@ namespace TreeToner.BusinessLogicalLayer.LiteDb
         {
             return _dll.GetAll(idNumber);
         }
-
         public void Update(Kayit Entity)
         {
             _dll.Update(Entity);

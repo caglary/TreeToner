@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using TreeToner.Entities;
-
 namespace TreeToner.DatabaseLogicalLayer.LiteDb
 {
     public class MusteriDll : IBaseOfDLL<Musteri>
@@ -31,7 +30,6 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
                 
             }
         }
-
         public bool Delete(Musteri Entity)
         {
             using (var db = new LiteDatabase(dBControl.DatabaseConnectionString))
@@ -40,9 +38,7 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
                 return collection.Delete(Entity.id);
                
             }
-
         }
-
         public Musteri Get(ObjectId IdNumber)
         {
             using (var db = new LiteDatabase(dBControl.DatabaseConnectionString))
@@ -51,7 +47,6 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
                 return collection.FindById(IdNumber);
             }
         }
-
         public List<Musteri> GetAll()
         {
             using (var db = new LiteDatabase(dBControl.DatabaseConnectionString))
@@ -60,7 +55,6 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
                 return collection.FindAll().ToList();
             }
         }
-
         public List<Musteri> Search(string paramtext)
         {
             using (var db = new LiteDatabase(dBControl.DatabaseConnectionString))
@@ -69,7 +63,6 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
                 return collection.Find(I => I.adiSoyadi.Contains(paramtext)).ToList();
             }
         }
-
         public bool Update(Musteri Entity)
         {
             using (var db = new LiteDatabase(dBControl.DatabaseConnectionString))
@@ -84,9 +77,7 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
                 m.adres = Entity.adres;
                 return collection.Update(m);
                 
-
             }
-
         }
     }
 }

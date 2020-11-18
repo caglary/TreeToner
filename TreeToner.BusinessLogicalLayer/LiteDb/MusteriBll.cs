@@ -5,7 +5,6 @@ using System.Linq;
 using TreeToner.BusinessLogicalLayer.Abstract;
 using TreeToner.DatabaseLogicalLayer.LiteDb;
 using TreeToner.Entities;
-
 namespace TreeToner.BusinessLogicalLayer.LiteDb
 {
     public class MusteriBll : IBaseBll<Entities.Musteri>
@@ -33,32 +32,26 @@ namespace TreeToner.BusinessLogicalLayer.LiteDb
                 return -1;//Ekleme işlemi yapılmadı.
             }
         }
-
         public void Delete(Musteri Entity)
         {
             _musteriDll.Delete(Entity);
         }
-
         public Musteri Get(ObjectId IdNumber)
         {
             return _musteriDll.Get(IdNumber);
         }
-
         public List<Musteri> GetAll()
         {
             return _musteriDll.GetAll();
         }
-
         public void Update(Musteri Entity)
         {
             _musteriDll.Update(Entity);
         }
-
         public int ToplamMusteriSayisi()
         {
             return _musteriDll.GetAll().Count;
         }
-
         public List<Musteri> Search(string paramtext)
         {
             return _musteriDll.Search(paramtext);

@@ -1,6 +1,5 @@
 ﻿using LiteDB;
 using System;
-
 namespace TreeToner.Entities
 {
     public class Kayit
@@ -17,8 +16,5 @@ namespace TreeToner.Entities
         public string sonuc { get; set; }
         public decimal fiyat { get; set; }
         public DateTime tarih { get; set; }
-
-
-
     }
 }
