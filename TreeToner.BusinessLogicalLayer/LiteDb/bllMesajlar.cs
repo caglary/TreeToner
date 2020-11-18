@@ -12,10 +12,20 @@ namespace TreeToner.BusinessLogicalLayer.LiteDb
 
         public static void warning(string metin)
         {
-            MessageBox.Show(metin,"Uyarı",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            MessageBox.Show(metin,"Uyarı Mesajı",MessageBoxButtons.OK,MessageBoxIcon.Warning);
         }
 
-
-
+        public static void error(string metin)
+        {
+            MessageBox.Show(metin, "Hata Mesajı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        public static void information(string metin)
+        {
+            MessageBox.Show(metin, "Bilgilendirme Mesajı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        public static void question(string metin)
+        {
+            MessageBox.Show(metin, "Soru ? ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        }
     }
 }

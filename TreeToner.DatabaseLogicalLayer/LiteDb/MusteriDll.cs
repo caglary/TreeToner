@@ -5,7 +5,7 @@ using TreeToner.Entities;
 
 namespace TreeToner.DatabaseLogicalLayer.LiteDb
 {
-    public class MusteriDll : IBaseOfDLL<Entities.Musteri>
+    public class MusteriDll : IBaseOfDLL<Musteri>
     {
         DBControl dBControl;
         public MusteriDll()

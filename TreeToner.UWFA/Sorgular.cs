@@ -20,18 +20,8 @@ namespace TreeToner.UWFA
             _kayitlarBll = new KayitlarBll();
         }
 
-      
-
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
-         
-        }
-
         private void Sorgular_Load(object sender, EventArgs e)
         {
-            
             var tumListe=_kayitlarBll.GetAll();
             var filitreliListe = tumListe.Where(I => I.sonuc == btnHazir.Text).ToList();
             groupBox2.Text = btnHazir.Text + " listesi";
@@ -40,12 +30,8 @@ namespace TreeToner.UWFA
             dataGridView1.Columns["id"].Visible = false;
             dataGridView1.Columns["musteriId"].Visible = false;
             dataGridView1.Columns["sonuc"].Visible = false;
-          
-
 
         }
-
-      
 
         private void btnTumKayitlar_Click(object sender, EventArgs e)
         {

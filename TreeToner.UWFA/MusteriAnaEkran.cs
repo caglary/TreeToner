@@ -11,28 +11,24 @@ namespace TreeToner.UWFA
     public partial class MusteriAnaEkran : Form
     {
 
-        BusinessLogicalLayer.LiteDb.MusteriBll musteriBll;
-        static Entities.Musteri activeMusteri;
+        MusteriBll musteriBll;
+        static Musteri activeMusteri;
 
         public MusteriAnaEkran()
         {
             InitializeComponent();
-            musteriBll = new BusinessLogicalLayer.LiteDb.MusteriBll();
+            musteriBll = new MusteriBll();
             activeMusteri = new Musteri();
         }
 
         private void musteri_Load(object sender, EventArgs e)
         {
-
-
             listeGetir();
             dgwListe.Columns["id"].Visible = false;
-
         }
 
         public void listeGetir()
         {
-
             dgwListe.DataSource = musteriBll.GetAll();
             lblToplamKayit.Text = $"Toplam Kayıtlı Müşteri Sayısı: {musteriBll.ToplamMusteriSayisi()}";
         }
@@ -41,11 +37,6 @@ namespace TreeToner.UWFA
             var liste = musteriBll.GetAll();
             dgwListe.DataSource = liste.FindAll(I => I.id == musteriId);
             lblToplamKayit.Text = $"Toplam Kayıtlı Müşteri Sayısı: {musteriBll.ToplamMusteriSayisi()}";
-        }
-
-        private void btncikis_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -61,26 +52,6 @@ namespace TreeToner.UWFA
             m.tarih = m.id.CreationTime;
             musteriBll.Add(m);
             listeGetir(m.id);
-
-        }
-
-
-
-
-
-
-        private void exceleaktar()
-        {
-
-
-            //    var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
-            //    workbook.SaveAs($"{path}\\Musteri_listesi.xlsx", Missing, Missing, Missing, Missing, Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange, Missing, Missing, Missing, Missing, Missing);
-            //    workbook.Close(true, Missing, Missing);
-            //    excel.Quit();
-
-
-            //}
-
 
         }
 
@@ -173,20 +144,6 @@ namespace TreeToner.UWFA
             }
 
         }
-
-        private void txtAdSoyad_TextChanged(object sender, EventArgs e)
-        {
-
-            //txtTelefonI.Text = "";
-            //txtTelefonII.Text = "";
-            //txtTelefonIII.Text = "";
-            //txtAdres.Text = "";
-            //txtEmail.Text = "";
-            //dataGridView1.DataSource = bll.MusteriListeAra(txtAdSoyad.Text);
-            //lblMusteriNo2.Text = bll.MusteriId(txtAdSoyad.Text).ToString();
-
-        }
-
         private void btnYedekDisari_Click(object sender, EventArgs e)
         {
             //backup işlemi
@@ -217,21 +174,11 @@ namespace TreeToner.UWFA
             listeGetir();
         }
 
-
         private void btnSorgu_Click(object sender, EventArgs e)
         {
             Sorgular frm = new Sorgular();
             frm.Show();
-
-
-
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGetAll_Click(object sender, EventArgs e)
         {
             listeGetir();

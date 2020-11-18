@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusteriGuncelle));
-            this.lblMusteriNo2 = new System.Windows.Forms.Label();
-            this.lblMusteriNo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtAdSoyad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,28 +44,6 @@
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // lblMusteriNo2
-            // 
-            this.lblMusteriNo2.AutoSize = true;
-            this.lblMusteriNo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMusteriNo2.Location = new System.Drawing.Point(109, 18);
-            this.lblMusteriNo2.Name = "lblMusteriNo2";
-            this.lblMusteriNo2.Size = new System.Drawing.Size(16, 18);
-            this.lblMusteriNo2.TabIndex = 7;
-            this.lblMusteriNo2.Text = "0";
-            this.lblMusteriNo2.Visible = false;
-            // 
-            // lblMusteriNo
-            // 
-            this.lblMusteriNo.AutoSize = true;
-            this.lblMusteriNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMusteriNo.Location = new System.Drawing.Point(12, 18);
-            this.lblMusteriNo.Name = "lblMusteriNo";
-            this.lblMusteriNo.Size = new System.Drawing.Size(91, 18);
-            this.lblMusteriNo.TabIndex = 8;
-            this.lblMusteriNo.Text = "lblMusteriNo";
-            this.lblMusteriNo.Visible = false;
             // 
             // label2
             // 
@@ -210,8 +186,6 @@
             this.ControlBox = false;
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnGuncelle);
-            this.Controls.Add(this.lblMusteriNo2);
-            this.Controls.Add(this.lblMusteriNo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtAdSoyad);
             this.Controls.Add(this.label3);
@@ -234,9 +208,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblMusteriNo2;
-        private System.Windows.Forms.Label lblMusteriNo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtAdSoyad;
         private System.Windows.Forms.Label label3;
