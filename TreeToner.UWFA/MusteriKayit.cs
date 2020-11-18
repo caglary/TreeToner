@@ -15,82 +15,9 @@ namespace TreeToner.UWFA
         public MusteriKayit(Musteri musteri)
         {
             InitializeComponent();
-            _kayitlarBll = new BusinessLogicalLayer.LiteDb.KayitlarBll();
+            _kayitlarBll = new KayitlarBll();
             _musteri = musteri;
         }
-        private void exceleaktar()
-        {
-            DialogResult soru = new DialogResult();
-            soru = MessageBox.Show("Tablodaki veriler EXCEL'e aktarılacak . Devam etmek istiyor musunuz.",
-                "Bilgilendirme", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (soru == DialogResult.Yes)
-            {
-                Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
-                excel.Visible = true;
-                object Missing = Type.Missing;
-                Workbook workbook = excel.Workbooks.Add(Missing);
-                Worksheet sheet1 = (Worksheet)workbook.Sheets[1];
-                int StartCol = 1;
-                int StartRow = 1;
-                for (int j = 0; j < dataGridView1.Columns.Count; j++)
-                {
-                    Range myRange = (Range)sheet1.Cells[StartRow, StartCol + j];
-                    //myRange.Value2 = dataGridView1.Columns[j].HeaderText;
-                    if (j == 0)
-                        myRange.Value2 = "Yazıcı Model";
-                    if (j == 1)
-                        myRange.Value2 = "Yazıcı Seri No";
-                    if (j == 2)
-                        myRange.Value2 = "Usb K";
-                    if (j == 3)
-                        myRange.Value2 = "Power K";
-                    if (j == 4)
-                        myRange.Value2 = "Arıza";
-                    if (j == 5)
-                        myRange.Value2 = "Açıklama";
-                    if (j == 6)
-                        myRange.Value2 = "Sonuç";
-                    if (j == 7)
-                        myRange.Value2 = "Fiyat";
-                    if (j == 8)
-                        myRange.Value2 = "Tarih";
-
-
-                }
-
-                int a = 0;
-                StartRow++;
-                for (int i = 0; i < dataGridView1.Rows.Count; i++)
-                {
-                    for (int j = 0; j < dataGridView1.Columns.Count - 2; j++)
-                    {
-                        a = j;
-                        if (!(j == 8))
-                        {
-                            Range myRange = (Range)sheet1.Cells[StartRow + i, StartCol + j];
-                            myRange.Value2 = dataGridView1[a + 2, i].Value.ToString() == null ? "" : dataGridView1[a + 2, i].Value.ToString();
-                            myRange.Select();
-                        }
-
-                        if (j == 8)
-                        {
-                            Range myRange = (Range)sheet1.Cells[StartRow + i, StartCol + j];
-                            myRange.Value2 = dataGridView1[a + 2, i].Value.ToString().Substring(0, 10) == null ? "" : dataGridView1[a + 2, i].Value.ToString().Substring(0, 10);
-                            myRange.Select();
-
-                        }
-
-
-
-
-                    }
-
-                }
-            }
-
-
-        }
-
         private void MusteriKayit_Load(object sender, EventArgs e)
         {
             activeKayit = null;
@@ -104,7 +31,6 @@ namespace TreeToner.UWFA
             dataGridView1.DataSource = _kayitlarBll.GetAll(_musteri.id);
             dataGridView1.Columns["id"].Visible = false;
             dataGridView1.Columns["musteriId"].Visible = false;
-
 
             lblTarih.Text = "";
             txtYaziciModel.Text = "";
@@ -158,19 +84,14 @@ namespace TreeToner.UWFA
                 }
                 catch (Exception exception)
                 {
-                    bllMesajlar.warning(exception.Message);
+                    bllMesajlar.error(exception.Message);
                 }
             }
             else
             {
-                bllMesajlar.warning("Yazıcı Model alanı boş geçilemez.");
+                bllMesajlar.information("Yazıcı Model alanı boş geçilemez.");
             }
 
-        }
-
-        private void btncikis_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void btnGuncelle_Click(object sender, EventArgs e)
@@ -256,11 +177,6 @@ namespace TreeToner.UWFA
 
             var secilenKayit = _kayitlarBll.Get((ObjectId)dataGridView1.Rows[secilen].Cells["id"].Value);
             activeKayit = secilenKayit;
-
-
-
-
-
         }
 
         private void btnSil_Click(object sender, EventArgs e)
@@ -294,7 +210,6 @@ namespace TreeToner.UWFA
                 object Missing = Type.Missing;
                 Workbook workbook = excel.Workbooks.Add(Missing);
                 Worksheet sheet1 = (Worksheet)workbook.Sheets[1];
-
 
                 int StartCol = 0;
                 int StartRow = 1;

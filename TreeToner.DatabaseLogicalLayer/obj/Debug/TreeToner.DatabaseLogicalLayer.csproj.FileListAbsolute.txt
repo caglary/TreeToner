@@ -26,3 +26,14 @@ D:\repos\TreeToner\TreeToner\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.
 D:\repos\TreeToner\TreeToner\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.DatabaseLogicalLayer.pdb
 D:\repos\TreeToner\TreeToner\TreeToner.DatabaseLogicalLayer\bin\Debug\LiteDB.dll
 D:\repos\TreeToner\TreeToner\TreeToner.DatabaseLogicalLayer\bin\Debug\LiteDB.xml
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.DatabaseLogicalLayer\bin\Debug\TreeToner.DatabaseLogicalLayer.dll
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.DatabaseLogicalLayer\bin\Debug\TreeToner.DatabaseLogicalLayer.pdb
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.DatabaseLogicalLayer\bin\Debug\LiteDB.dll
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.DatabaseLogicalLayer\bin\Debug\TreeToner.Entities.dll
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.DatabaseLogicalLayer\bin\Debug\TreeToner.Entities.pdb
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.DatabaseLogicalLayer\bin\Debug\LiteDB.xml
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.DatabaseLogicalLayer.csprojAssemblyReference.cache
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.DatabaseLogicalLayer.csproj.CoreCompileInputs.cache
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.DatabaseLogicalLayer.csproj.CopyComplete
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.DatabaseLogicalLayer.dll
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.DatabaseLogicalLayer.pdb

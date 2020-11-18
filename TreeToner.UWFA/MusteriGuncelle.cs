@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Xml;
+using TreeToner.BusinessLogicalLayer.LiteDb;
 using TreeToner.Entities;
 
 namespace TreeToner.UWFA
@@ -8,14 +9,14 @@ namespace TreeToner.UWFA
     public partial class MusteriGuncelle : Form
     {
 
-        BusinessLogicalLayer.LiteDb.MusteriBll musteriBll;
+        MusteriBll musteriBll;
         Musteri _musteri;
 
         public MusteriGuncelle(Entities.Musteri musteri)
         {
             InitializeComponent();
             _musteri = musteri;
-            musteriBll = new BusinessLogicalLayer.LiteDb.MusteriBll();
+            musteriBll = new MusteriBll();
         }
      
         private void btnGuncelle_Click(object sender, EventArgs e)

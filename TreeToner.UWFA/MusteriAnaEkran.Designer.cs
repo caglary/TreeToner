@@ -85,7 +85,6 @@
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(298, 28);
             this.txtAdSoyad.TabIndex = 1;
-            this.txtAdSoyad.TextChanged += new System.EventHandler(this.txtAdSoyad_TextChanged);
             // 
             // label3
             // 
@@ -203,7 +202,6 @@
             this.groupBox1.Size = new System.Drawing.Size(1554, 300);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // lblToplamKayit
             // 
