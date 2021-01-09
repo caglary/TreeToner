@@ -21,7 +21,18 @@ namespace TreeToner.UWFA
         {
             activeKayit = null;
             kayitlarListele();
-            lblisim.Text = $"{_musteri.adiSoyadi} - Tel:{_musteri.telefonI}";
+            if (!string.IsNullOrEmpty(_musteri.adiSoyadi) && !string.IsNullOrEmpty(_musteri.kurumAdi))
+            {
+                lblisim.Text = $" {_musteri.kurumAdi} - {_musteri.adiSoyadi} - Tel:{_musteri.telefonI}";
+            }
+            else if (!string.IsNullOrEmpty(_musteri.adiSoyadi))
+            {
+                lblisim.Text = $"{_musteri.adiSoyadi} - Tel:{_musteri.telefonI}";
+            }
+            else
+                lblisim.Text = $"{_musteri.kurumAdi} - Tel:{_musteri.telefonI}";
+
+
         }
         private void kayitlarListele()
         {
@@ -86,40 +97,40 @@ namespace TreeToner.UWFA
         }
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-          
-                activeKayit.yaziciModel = txtYaziciModel.Text;
-                activeKayit.yaziciSeriNo = txtYaziciSeriNo.Text;
-                activeKayit.ariza = txtArizaBilgisi.Text;
-                activeKayit.sonuc = cmbSonuc.Text;
-                if (string.IsNullOrEmpty(txtfiyat.Text))
-                    activeKayit.fiyat = 0;
-                else
-                {
-                    activeKayit.fiyat = Convert.ToDecimal(txtfiyat.Text);
-                }
-                activeKayit.aciklama = txtAciklama.Text;
-                if (cbxUsb.Checked == true)
-                    activeKayit.usbKablosuVar = "Var";
-                else
-                {
-                    activeKayit.usbKablosuVar = "Yok";
-                }
-                if (cbxPower.Checked == true)
-                    activeKayit.powerKablosuVar = "Var";
-                else
-                {
-                    activeKayit.powerKablosuVar = "Yok";
-                }
-                _kayitlarBll.Update(activeKayit);
-                kayitlarListele();
-            lblTarih.Text = activeKayit.tarih.ToString().Substring(0,10);
+
+            activeKayit.yaziciModel = txtYaziciModel.Text;
+            activeKayit.yaziciSeriNo = txtYaziciSeriNo.Text;
+            activeKayit.ariza = txtArizaBilgisi.Text;
+            activeKayit.sonuc = cmbSonuc.Text;
+            if (string.IsNullOrEmpty(txtfiyat.Text))
+                activeKayit.fiyat = 0;
+            else
+            {
+                activeKayit.fiyat = Convert.ToDecimal(txtfiyat.Text);
+            }
+            activeKayit.aciklama = txtAciklama.Text;
+            if (cbxUsb.Checked == true)
+                activeKayit.usbKablosuVar = "Var";
+            else
+            {
+                activeKayit.usbKablosuVar = "Yok";
+            }
+            if (cbxPower.Checked == true)
+                activeKayit.powerKablosuVar = "Var";
+            else
+            {
+                activeKayit.powerKablosuVar = "Yok";
+            }
+            _kayitlarBll.Update(activeKayit);
+            kayitlarListele();
+            lblTarih.Text = activeKayit.tarih.ToString().Substring(0, 10);
             txtYaziciModel.Text = activeKayit.yaziciModel;
             txtAciklama.Text = activeKayit.aciklama;
             txtArizaBilgisi.Text = activeKayit.ariza;
             txtYaziciSeriNo.Text = activeKayit.yaziciSeriNo;
             txtfiyat.Text = activeKayit.fiyat.ToString();
             cmbSonuc.Text = activeKayit.sonuc;
-            if (activeKayit.usbKablosuVar == "Var") cbxUsb.Checked =true;
+            if (activeKayit.usbKablosuVar == "Var") cbxUsb.Checked = true;
             else cbxUsb.Checked = false;
             if (activeKayit.powerKablosuVar == "Var") cbxPower.Checked = true;
             else cbxPower.Checked = false;
@@ -156,7 +167,15 @@ namespace TreeToner.UWFA
             if (activeKayit != null)
             {
                 DialogResult soru = new DialogResult();
-                soru = MessageBox.Show($"{_musteri.adiSoyadi} ait kaydı silmek istiyor musunuz?", "BİLGİLENDİRME", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (!string.IsNullOrEmpty(_musteri.adiSoyadi))
+                {
+                    soru = MessageBox.Show($"{_musteri.adiSoyadi} ait kaydı silmek istiyor musunuz?", "BİLGİLENDİRME", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    soru = MessageBox.Show($"{_musteri.kurumAdi} ait kaydı silmek istiyor musunuz?", "BİLGİLENDİRME", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                }
+
                 if (soru == DialogResult.Yes)
                 {
                     _kayitlarBll.Delete(activeKayit);
@@ -185,7 +204,7 @@ namespace TreeToner.UWFA
                 for (int j = 1; j < 10; j++)
                 {
                     Range myRange = (Range)sheet1.Cells[StartRow, StartCol + j];
-                    
+
                     if (j == 1)
                         myRange.Value2 = "Yazıcı Model";
                     if (j == 2)
@@ -200,7 +219,7 @@ namespace TreeToner.UWFA
                         myRange.Value2 = "Açıklama";
                     if (j == 7)
                         myRange.Value2 = "İşlem Durumu";
-                    if (j ==8)
+                    if (j == 8)
                         myRange.Value2 = "Fiyat";
                     if (j == 9)
                         myRange.Value2 = "Tarih";
@@ -211,7 +230,7 @@ namespace TreeToner.UWFA
                     for (int j = 1; j < 10; j++)
                     {
                         Range myRange = (Range)sheet1.Cells[StartRow + i, StartCol + j];
-                        myRange.Value2 = dataGridView1[j+1, i].Value == null ? "" : dataGridView1[j+1, i].Value;
+                        myRange.Value2 = dataGridView1[j + 1, i].Value == null ? "" : dataGridView1[j + 1, i].Value;
                         myRange.Select();
                     }
                 }

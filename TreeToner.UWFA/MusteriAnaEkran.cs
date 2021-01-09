@@ -5,6 +5,10 @@ using System.IO;
 using System.Windows.Forms;
 using TreeToner.Entities;
 using TreeToner.BusinessLogicalLayer.LiteDb;
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace TreeToner.UWFA
 {
     public partial class MusteriAnaEkran : Form
@@ -37,10 +41,10 @@ namespace TreeToner.UWFA
         {
             Musteri m = new Musteri();
             m.id = ObjectId.NewObjectId();
-            m.adiSoyadi = txtAdSoyad.Text;
+            m.kurumAdi = txtKurumAdi.Text;
+            m.adiSoyadi = txtKisiAdi.Text;
             m.telefonI = txtTelefonI.Text;
             m.telefonII = txtTelefonII.Text;
-            m.telefonIII = txtTelefonIII.Text;
             m.mail = txtEmail.Text;
             m.adres = txtAdres.Text;
             m.tarih = m.id.CreationTime;
@@ -49,16 +53,21 @@ namespace TreeToner.UWFA
         }
         private void dataGridView1_Click(object sender, EventArgs e)
         {
+
             int secilen = dgwListe.SelectedCells[0].RowIndex;
+            dgwListe.Tag = dgwListe.Rows[secilen].Cells["id"].Value;
+
             //lblMusteriNo.Text = dgwListe.Rows[secilen].Cells["id"].Value == null ? "" : dgwListe.Rows[secilen].Cells["id"].Value.ToString();
-            txtAdSoyad.Text = dgwListe.Rows[secilen].Cells["adiSoyadi"].Value == null ? "" : dgwListe.Rows[secilen].Cells["adiSoyadi"].Value.ToString();
+            txtKurumAdi.Text = dgwListe.Rows[secilen].Cells["kurumAdi"].Value == null ? "" : dgwListe.Rows[secilen].Cells["kurumAdi"].Value.ToString();
+            txtKisiAdi.Text = dgwListe.Rows[secilen].Cells["adiSoyadi"].Value == null ? "" : dgwListe.Rows[secilen].Cells["adiSoyadi"].Value.ToString();
             txtTelefonI.Text = dgwListe.Rows[secilen].Cells["telefonI"].Value == null ? "" : dgwListe.Rows[secilen].Cells["telefonI"].Value.ToString();
             txtTelefonII.Text = dgwListe.Rows[secilen].Cells["telefonII"].Value == null ? "" : dgwListe.Rows[secilen].Cells["telefonII"].Value.ToString();
-            txtTelefonIII.Text = dgwListe.Rows[secilen].Cells["telefonIII"].Value == null ? "" : dgwListe.Rows[secilen].Cells["telefonIII"].Value.ToString();
             txtEmail.Text = dgwListe.Rows[secilen].Cells["mail"].Value == null ? "" : dgwListe.Rows[secilen].Cells["mail"].Value.ToString();
             txtAdres.Text = dgwListe.Rows[secilen].Cells["adres"].Value == null ? "" : dgwListe.Rows[secilen].Cells["adres"].Value.ToString();
-            var secilenMusteri = musteriBll.Get((ObjectId)dgwListe.Rows[secilen].Cells["id"].Value);
+            var secilenMusteri = musteriBll.Get((ObjectId)dgwListe.Tag);
             activeMusteri = secilenMusteri;
+
+
         }
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
@@ -70,8 +79,23 @@ namespace TreeToner.UWFA
         }
         private void btnSil_Click(object sender, EventArgs e)
         {
+
             DialogResult soru = new DialogResult();
-            soru = MessageBox.Show($"{txtAdSoyad.Text} isimli kaydı silmek istiyor musunuz?", "BİLGİLENDİRME", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (!string.IsNullOrEmpty(txtKurumAdi.Text))
+            {
+                soru = MessageBox.Show($"{txtKurumAdi.Text} isimli kaydı silmek istiyor musunuz?", "BİLGİLENDİRME", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            }
+            else if (!string.IsNullOrEmpty(txtKisiAdi.Text))
+            {
+                soru = MessageBox.Show($"{txtKisiAdi.Text} isimli kaydı silmek istiyor musunuz?", "BİLGİLENDİRME", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            }
+            else
+            {
+                bllMesajlar.error("Silmek istediğiniz kaydı seçiniz.");
+            }
+
+
+
             if (soru == DialogResult.Yes)
             {
                 musteriBll.Delete(activeMusteri);
@@ -81,10 +105,10 @@ namespace TreeToner.UWFA
         }
         private void temizle()
         {
-            txtAdSoyad.Text = "";
+            txtKurumAdi.Text = "";
+            txtKisiAdi.Text = "";
             txtTelefonI.Text = "";
             txtTelefonII.Text = "";
-            txtTelefonIII.Text = "";
             txtAdres.Text = "";
             txtEmail.Text = "";
         }
@@ -195,7 +219,64 @@ namespace TreeToner.UWFA
         }
         private void btnArama_Click(object sender, EventArgs e)
         {
-            dgwListe.DataSource= musteriBll.Search(txtArama.Text);
+            if (!string.IsNullOrEmpty(txtArama.Text))
+            {
+                dgwListe.DataSource = musteriBll.Search(txtArama.Text);
+
+            }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            #region Listedeki kayıtları düzenlemek için kullanıldı.
+            //KayitlarBll kayitlarBll = new KayitlarBll();
+            //var KayitlarListesi = kayitlarBll.GetAll();
+            //var musterisiOlmayanKayit = new List<Kayit>();
+
+            //var musteriler = musteriBll.GetAll();
+            //var musterisiOlmayanKayitlar = new List<ObjectId>();
+            //foreach (var printer in KayitlarListesi)
+            //{
+
+            //    Musteri m = new Musteri();
+            //    m = musteriler.Where(I => I.id == printer.musteriId).FirstOrDefault();
+            //    if (m == null)
+            //    {
+            //        musterisiOlmayanKayitlar.Add(printer.musteriId);
+            //        Kayit k = new Kayit();
+            //        k = KayitlarListesi.Where(I => I.id == printer.id).FirstOrDefault();
+            //        musterisiOlmayanKayit.Add(k);
+            //    }
+
+            //}
+
+            //foreach (var item in musterisiOlmayanKayit)
+            //{
+            //    kayitlarBll.Delete(item);
+            //}
+            #endregion
+
+
+            #region Database içerisindeki isim ve kurum adı null olan kayıtları silme 
+            //var liste = musteriBll.GetAll();
+            //List< ObjectId> ids = new List<ObjectId>();
+            //foreach (var item in liste)
+            //{
+            //    if (item.kurumAdi == null && item.adiSoyadi == null)
+            //        ids.Add(item.id);
+
+            //}
+
+            //foreach (var itemId in ids)
+            //{
+            //    musteriBll.Delete(new Musteri { id = itemId });
+            //}
+            #endregion
+
+
+
+        }
+
+       
     }
 }

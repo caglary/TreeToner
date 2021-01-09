@@ -20,10 +20,10 @@ namespace TreeToner.UWFA
         {
             Musteri m = new Musteri();
             m.id = _musteri.id;
-            m.adiSoyadi = txtAdSoyad.Text;
-            m.telefonI = txtTelefonI.Text;
-            m.telefonII = txtTelefonII.Text;
-            m.telefonIII = txtTelefonIII.Text;
+            m.kurumAdi = txtKurumAdi.Text;
+            m.adiSoyadi = txtKisiAdi.Text;
+            m.telefonI = txtTelefon.Text;
+            m.telefonII = txtTelefon2.Text;
             m.mail = txtEmail.Text;
             m.adres = txtAdres.Text;
             musteriBll.Update(m);
@@ -31,10 +31,10 @@ namespace TreeToner.UWFA
         }
         private void MusteriGuncelle_Load(object sender, EventArgs e)
         {
-            txtAdSoyad.Text = _musteri.adiSoyadi;
-            txtTelefonI.Text = _musteri.telefonI;
-            txtTelefonII.Text = _musteri.telefonII;
-            txtTelefonIII.Text = _musteri.telefonIII;
+            txtKurumAdi.Text = _musteri.kurumAdi;
+            txtKisiAdi.Text = _musteri.adiSoyadi;
+            txtTelefon.Text = _musteri.telefonI;
+            txtTelefon2.Text = _musteri.telefonII;
             txtEmail.Text = _musteri.mail;
             txtAdres.Text = _musteri.adres;
         }

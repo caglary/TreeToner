@@ -28,13 +28,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusteriAnaEkran));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtAdSoyad = new System.Windows.Forms.TextBox();
+            this.txtKurumAdi = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtTelefonI = new System.Windows.Forms.TextBox();
+            this.txtKisiAdi = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtTelefonII = new System.Windows.Forms.TextBox();
+            this.txtTelefonI = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtTelefonIII = new System.Windows.Forms.TextBox();
+            this.txtTelefonII = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -43,21 +43,19 @@
             this.lblToplamKayit = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnKayit = new System.Windows.Forms.Button();
+            this.btnYedekDisari = new System.Windows.Forms.Button();
+            this.btnYedekIceri = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgwListe = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnGetAll = new System.Windows.Forms.Button();
             this.btnKaydet = new System.Windows.Forms.Button();
-            this.btnYedekDisari = new System.Windows.Forms.Button();
-            this.btnYedekIceri = new System.Windows.Forms.Button();
             this.btnSorgu = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnExcel = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtArama = new System.Windows.Forms.TextBox();
             this.btnArama = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -76,17 +74,17 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 18);
+            this.label2.Size = new System.Drawing.Size(80, 18);
             this.label2.TabIndex = 0;
-            this.label2.Text = "KİŞİ/KURUM ADI:";
+            this.label2.Text = "Kurum Adı:";
             // 
-            // txtAdSoyad
+            // txtKurumAdi
             // 
-            this.txtAdSoyad.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAdSoyad.Location = new System.Drawing.Point(144, 119);
-            this.txtAdSoyad.Name = "txtAdSoyad";
-            this.txtAdSoyad.Size = new System.Drawing.Size(298, 28);
-            this.txtAdSoyad.TabIndex = 1;
+            this.txtKurumAdi.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKurumAdi.Location = new System.Drawing.Point(144, 119);
+            this.txtKurumAdi.Name = "txtKurumAdi";
+            this.txtKurumAdi.Size = new System.Drawing.Size(298, 28);
+            this.txtKurumAdi.TabIndex = 1;
             // 
             // label3
             // 
@@ -94,17 +92,17 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(6, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 18);
+            this.label3.Size = new System.Drawing.Size(60, 18);
             this.label3.TabIndex = 0;
-            this.label3.Text = "TELEFON I :";
+            this.label3.Text = "Kisi Adı:";
             // 
-            // txtTelefonI
+            // txtKisiAdi
             // 
-            this.txtTelefonI.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonI.Location = new System.Drawing.Point(144, 152);
-            this.txtTelefonI.Name = "txtTelefonI";
-            this.txtTelefonI.Size = new System.Drawing.Size(298, 28);
-            this.txtTelefonI.TabIndex = 2;
+            this.txtKisiAdi.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKisiAdi.Location = new System.Drawing.Point(144, 152);
+            this.txtKisiAdi.Name = "txtKisiAdi";
+            this.txtKisiAdi.Size = new System.Drawing.Size(298, 28);
+            this.txtKisiAdi.TabIndex = 2;
             // 
             // label4
             // 
@@ -112,17 +110,17 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 189);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 18);
+            this.label4.Size = new System.Drawing.Size(74, 18);
             this.label4.TabIndex = 0;
-            this.label4.Text = "TELEFON II :";
+            this.label4.Text = "Telefon -1";
             // 
-            // txtTelefonII
+            // txtTelefonI
             // 
-            this.txtTelefonII.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonII.Location = new System.Drawing.Point(144, 185);
-            this.txtTelefonII.Name = "txtTelefonII";
-            this.txtTelefonII.Size = new System.Drawing.Size(298, 28);
-            this.txtTelefonII.TabIndex = 3;
+            this.txtTelefonI.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefonI.Location = new System.Drawing.Point(144, 185);
+            this.txtTelefonI.Name = "txtTelefonI";
+            this.txtTelefonI.Size = new System.Drawing.Size(298, 28);
+            this.txtTelefonI.TabIndex = 3;
             // 
             // label5
             // 
@@ -130,17 +128,17 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 222);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 18);
+            this.label5.Size = new System.Drawing.Size(74, 18);
             this.label5.TabIndex = 0;
-            this.label5.Text = "TELEFON III";
+            this.label5.Text = "Telefon -2";
             // 
-            // txtTelefonIII
+            // txtTelefonII
             // 
-            this.txtTelefonIII.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonIII.Location = new System.Drawing.Point(144, 218);
-            this.txtTelefonIII.Name = "txtTelefonIII";
-            this.txtTelefonIII.Size = new System.Drawing.Size(298, 28);
-            this.txtTelefonIII.TabIndex = 4;
+            this.txtTelefonII.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefonII.Location = new System.Drawing.Point(144, 218);
+            this.txtTelefonII.Name = "txtTelefonII";
+            this.txtTelefonII.Size = new System.Drawing.Size(298, 28);
+            this.txtTelefonII.TabIndex = 4;
             // 
             // label6
             // 
@@ -148,9 +146,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 255);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 18);
+            this.label6.Size = new System.Drawing.Size(54, 18);
             this.label6.TabIndex = 0;
-            this.label6.Text = "E-MAİL :";
+            this.label6.Text = "E-mail:";
             // 
             // txtEmail
             // 
@@ -166,9 +164,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(468, 119);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 18);
+            this.label7.Size = new System.Drawing.Size(54, 18);
             this.label7.TabIndex = 0;
-            this.label7.Text = "ADRES :";
+            this.label7.Text = "Adres :";
             // 
             // txtAdres
             // 
@@ -184,18 +182,18 @@
             this.groupBox1.Controls.Add(this.lblToplamKayit);
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtAdSoyad);
+            this.groupBox1.Controls.Add(this.txtKurumAdi);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtAdres);
-            this.groupBox1.Controls.Add(this.txtTelefonI);
+            this.groupBox1.Controls.Add(this.txtKisiAdi);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtEmail);
-            this.groupBox1.Controls.Add(this.txtTelefonII);
+            this.groupBox1.Controls.Add(this.txtTelefonI);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtTelefonIII);
+            this.groupBox1.Controls.Add(this.txtTelefonII);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -217,7 +215,8 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.pictureBox2);
-            this.groupBox4.Controls.Add(this.btnKayit);
+            this.groupBox4.Controls.Add(this.btnYedekDisari);
+            this.groupBox4.Controls.Add(this.btnYedekIceri);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox4.Location = new System.Drawing.Point(1264, 23);
             this.groupBox4.Name = "groupBox4";
@@ -235,19 +234,33 @@
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
             // 
-            // btnKayit
+            // btnYedekDisari
             // 
-            this.btnKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKayit.Image = ((System.Drawing.Image)(resources.GetObject("btnKayit.Image")));
-            this.btnKayit.Location = new System.Drawing.Point(7, 201);
-            this.btnKayit.Margin = new System.Windows.Forms.Padding(4);
-            this.btnKayit.Name = "btnKayit";
-            this.btnKayit.Size = new System.Drawing.Size(270, 66);
-            this.btnKayit.TabIndex = 10;
-            this.btnKayit.Text = "MÜŞTERİYE AİT KAYITLAR İÇİN TIKLAYINIZ.";
-            this.btnKayit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnKayit.UseVisualStyleBackColor = true;
-            this.btnKayit.Click += new System.EventHandler(this.btnKayit_Click);
+            this.btnYedekDisari.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnYedekDisari.Image = ((System.Drawing.Image)(resources.GetObject("btnYedekDisari.Image")));
+            this.btnYedekDisari.Location = new System.Drawing.Point(7, 201);
+            this.btnYedekDisari.Margin = new System.Windows.Forms.Padding(4);
+            this.btnYedekDisari.Name = "btnYedekDisari";
+            this.btnYedekDisari.Size = new System.Drawing.Size(120, 60);
+            this.btnYedekDisari.TabIndex = 12;
+            this.btnYedekDisari.Text = "Yedek Al";
+            this.btnYedekDisari.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnYedekDisari.UseVisualStyleBackColor = true;
+            this.btnYedekDisari.Click += new System.EventHandler(this.btnYedekDisari_Click);
+            // 
+            // btnYedekIceri
+            // 
+            this.btnYedekIceri.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnYedekIceri.Image = ((System.Drawing.Image)(resources.GetObject("btnYedekIceri.Image")));
+            this.btnYedekIceri.Location = new System.Drawing.Point(155, 202);
+            this.btnYedekIceri.Margin = new System.Windows.Forms.Padding(4);
+            this.btnYedekIceri.Name = "btnYedekIceri";
+            this.btnYedekIceri.Size = new System.Drawing.Size(120, 60);
+            this.btnYedekIceri.TabIndex = 12;
+            this.btnYedekIceri.Text = "Yedek Yükle";
+            this.btnYedekIceri.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnYedekIceri.UseVisualStyleBackColor = true;
+            this.btnYedekIceri.Click += new System.EventHandler(this.btnYedekIceri_Click);
             // 
             // pictureBox1
             // 
@@ -302,8 +315,6 @@
             this.groupBox2.AutoSize = true;
             this.groupBox2.Controls.Add(this.btnGetAll);
             this.groupBox2.Controls.Add(this.btnKaydet);
-            this.groupBox2.Controls.Add(this.btnYedekDisari);
-            this.groupBox2.Controls.Add(this.btnYedekIceri);
             this.groupBox2.Controls.Add(this.btnSorgu);
             this.groupBox2.Controls.Add(this.btnGuncelle);
             this.groupBox2.Controls.Add(this.btnExcel);
@@ -311,18 +322,18 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Location = new System.Drawing.Point(0, 294);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1554, 114);
+            this.groupBox2.Size = new System.Drawing.Size(1554, 94);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
             // 
             // btnGetAll
             // 
             this.btnGetAll.Image = ((System.Drawing.Image)(resources.GetObject("btnGetAll.Image")));
-            this.btnGetAll.Location = new System.Drawing.Point(590, 21);
+            this.btnGetAll.Location = new System.Drawing.Point(402, 22);
             this.btnGetAll.Name = "btnGetAll";
-            this.btnGetAll.Size = new System.Drawing.Size(125, 70);
+            this.btnGetAll.Size = new System.Drawing.Size(120, 50);
             this.btnGetAll.TabIndex = 13;
-            this.btnGetAll.Text = "TÜM LİSTE";
+            this.btnGetAll.Text = "Tüm Liste";
             this.btnGetAll.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGetAll.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGetAll.UseVisualStyleBackColor = true;
@@ -331,145 +342,101 @@
             // btnKaydet
             // 
             this.btnKaydet.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.Image")));
-            this.btnKaydet.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnKaydet.Location = new System.Drawing.Point(7, 22);
+            this.btnKaydet.Location = new System.Drawing.Point(13, 22);
             this.btnKaydet.Margin = new System.Windows.Forms.Padding(4);
             this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(180, 70);
+            this.btnKaydet.Size = new System.Drawing.Size(120, 50);
             this.btnKaydet.TabIndex = 7;
-            this.btnKaydet.Text = "MÜŞTERİYİ EKLE";
-            this.btnKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnKaydet.Text = "Müşteri Ekle";
+            this.btnKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
-            // 
-            // btnYedekDisari
-            // 
-            this.btnYedekDisari.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnYedekDisari.Image = ((System.Drawing.Image)(resources.GetObject("btnYedekDisari.Image")));
-            this.btnYedekDisari.Location = new System.Drawing.Point(1272, 22);
-            this.btnYedekDisari.Margin = new System.Windows.Forms.Padding(4);
-            this.btnYedekDisari.Name = "btnYedekDisari";
-            this.btnYedekDisari.Size = new System.Drawing.Size(120, 60);
-            this.btnYedekDisari.TabIndex = 12;
-            this.btnYedekDisari.Text = "YEDEK DIŞARI";
-            this.btnYedekDisari.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnYedekDisari.UseVisualStyleBackColor = true;
-            this.btnYedekDisari.Click += new System.EventHandler(this.btnYedekDisari_Click);
-            // 
-            // btnYedekIceri
-            // 
-            this.btnYedekIceri.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnYedekIceri.Image = ((System.Drawing.Image)(resources.GetObject("btnYedekIceri.Image")));
-            this.btnYedekIceri.Location = new System.Drawing.Point(1399, 22);
-            this.btnYedekIceri.Margin = new System.Windows.Forms.Padding(4);
-            this.btnYedekIceri.Name = "btnYedekIceri";
-            this.btnYedekIceri.Size = new System.Drawing.Size(120, 60);
-            this.btnYedekIceri.TabIndex = 12;
-            this.btnYedekIceri.Text = "YEDEK İÇERİ";
-            this.btnYedekIceri.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnYedekIceri.UseVisualStyleBackColor = true;
-            this.btnYedekIceri.Click += new System.EventHandler(this.btnYedekIceri_Click);
             // 
             // btnSorgu
             // 
             this.btnSorgu.Image = ((System.Drawing.Image)(resources.GetObject("btnSorgu.Image")));
-            this.btnSorgu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSorgu.Location = new System.Drawing.Point(910, 22);
+            this.btnSorgu.Location = new System.Drawing.Point(657, 21);
             this.btnSorgu.Margin = new System.Windows.Forms.Padding(4);
             this.btnSorgu.Name = "btnSorgu";
-            this.btnSorgu.Size = new System.Drawing.Size(180, 70);
+            this.btnSorgu.Size = new System.Drawing.Size(120, 50);
             this.btnSorgu.TabIndex = 12;
-            this.btnSorgu.Text = "İŞLEM SORGU";
-            this.btnSorgu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSorgu.Text = "İşlem Sorgu";
+            this.btnSorgu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSorgu.UseVisualStyleBackColor = true;
             this.btnSorgu.Click += new System.EventHandler(this.btnSorgu_Click);
             // 
             // btnGuncelle
             // 
             this.btnGuncelle.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.Image")));
-            this.btnGuncelle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGuncelle.Location = new System.Drawing.Point(205, 22);
+            this.btnGuncelle.Location = new System.Drawing.Point(144, 22);
             this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(180, 70);
+            this.btnGuncelle.Size = new System.Drawing.Size(120, 50);
             this.btnGuncelle.TabIndex = 8;
-            this.btnGuncelle.Text = "MÜŞTERİYİ GÜNCELLE";
-            this.btnGuncelle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnGuncelle.Text = "Müşteri Güncelle";
+            this.btnGuncelle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuncelle.UseVisualStyleBackColor = true;
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnExcel
             // 
             this.btnExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExcel.Image")));
-            this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnExcel.Location = new System.Drawing.Point(722, 22);
+            this.btnExcel.Location = new System.Drawing.Point(529, 21);
             this.btnExcel.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcel.Name = "btnExcel";
-            this.btnExcel.Size = new System.Drawing.Size(180, 70);
+            this.btnExcel.Size = new System.Drawing.Size(120, 50);
             this.btnExcel.TabIndex = 11;
-            this.btnExcel.Text = "TABLOYU EXCELE AKTAR";
-            this.btnExcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnExcel.Text = "Excele Aktar";
+            this.btnExcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExcel.UseVisualStyleBackColor = true;
             this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // btnSil
             // 
             this.btnSil.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.Image")));
-            this.btnSil.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSil.Location = new System.Drawing.Point(403, 22);
+            this.btnSil.Location = new System.Drawing.Point(272, 21);
             this.btnSil.Margin = new System.Windows.Forms.Padding(4);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(180, 70);
+            this.btnSil.Size = new System.Drawing.Size(120, 50);
             this.btnSil.TabIndex = 9;
-            this.btnSil.Text = "MÜŞTERİYİ SİL";
-            this.btnSil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSil.Text = "Müşteri Sil";
+            this.btnSil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSil.UseVisualStyleBackColor = true;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Controls.Add(this.txtArama);
             this.groupBox5.Controls.Add(this.btnArama);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox5.Location = new System.Drawing.Point(0, 408);
+            this.groupBox5.Location = new System.Drawing.Point(0, 388);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(1554, 76);
             this.groupBox5.TabIndex = 22;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Arama";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "KİŞİ/KURUM ADI:";
-            // 
             // txtArama
             // 
             this.txtArama.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArama.Location = new System.Drawing.Point(144, 26);
+            this.txtArama.Location = new System.Drawing.Point(9, 26);
             this.txtArama.Name = "txtArama";
-            this.txtArama.Size = new System.Drawing.Size(312, 28);
+            this.txtArama.Size = new System.Drawing.Size(447, 28);
             this.txtArama.TabIndex = 1;
             // 
             // btnArama
             // 
+            this.btnArama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnArama.Image = ((System.Drawing.Image)(resources.GetObject("btnArama.Image")));
-            this.btnArama.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnArama.Location = new System.Drawing.Point(472, 22);
+            this.btnArama.Location = new System.Drawing.Point(472, 15);
             this.btnArama.Margin = new System.Windows.Forms.Padding(4);
             this.btnArama.Name = "btnArama";
-            this.btnArama.Size = new System.Drawing.Size(123, 37);
+            this.btnArama.Size = new System.Drawing.Size(84, 52);
             this.btnArama.TabIndex = 12;
             this.btnArama.Text = "Ara";
             this.btnArama.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnArama.UseVisualStyleBackColor = true;
+            this.btnArama.UseVisualStyleBackColor = false;
             this.btnArama.Click += new System.EventHandler(this.btnArama_Click);
             // 
             // MusteriAnaEkran
@@ -501,15 +468,16 @@
             this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
         #endregion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtTelefonI;
+        private System.Windows.Forms.TextBox txtKisiAdi;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtTelefonII;
+        private System.Windows.Forms.TextBox txtTelefonI;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtTelefonIII;
+        private System.Windows.Forms.TextBox txtTelefonII;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label7;
@@ -520,7 +488,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnKayit;
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnExcel;
         private System.Windows.Forms.Button btnSil;
@@ -528,12 +495,11 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnYedekIceri;
         private System.Windows.Forms.Button btnYedekDisari;
-        public System.Windows.Forms.TextBox txtAdSoyad;
+        public System.Windows.Forms.TextBox txtKurumAdi;
         private System.Windows.Forms.Button btnSorgu;
         private System.Windows.Forms.Label lblToplamKayit;
         private System.Windows.Forms.Button btnGetAll;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox txtArama;
         private System.Windows.Forms.Button btnArama;
     }

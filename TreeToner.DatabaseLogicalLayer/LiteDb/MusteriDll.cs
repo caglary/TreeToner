@@ -55,14 +55,7 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
                 return collection.FindAll().ToList();
             }
         }
-        public List<Musteri> Search(string paramtext)
-        {
-            using (var db = new LiteDatabase(dBControl.DatabaseConnectionString))
-            {
-                var collection = db.GetCollection<Entities.Musteri>();
-                return collection.Find(I => I.adiSoyadi.Contains(paramtext)).ToList();
-            }
-        }
+     
         public bool Update(Musteri Entity)
         {
             using (var db = new LiteDatabase(dBControl.DatabaseConnectionString))
@@ -71,8 +64,8 @@ namespace TreeToner.DatabaseLogicalLayer.LiteDb
                 var m = collection.Find(I => I.id == Entity.id).FirstOrDefault();
                 m.adiSoyadi = Entity.adiSoyadi;
                 m.telefonI = Entity.telefonI;
-                m.telefonII = Entity.telefonII;
-                m.telefonIII = Entity.telefonIII;
+                m.telefonII = Entity.telefonI;
+                m.kurumAdi = Entity.kurumAdi;
                 m.mail = Entity.mail;
                 m.adres = Entity.adres;
                 return collection.Update(m);

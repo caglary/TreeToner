@@ -26,3 +26,21 @@ C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.Entities\obj\Debug\TreeTone
 C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.Entities\obj\Debug\TreeToner.Entities.csproj.CopyComplete
 C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.Entities\obj\Debug\TreeToner.Entities.dll
 C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.Entities\obj\Debug\TreeToner.Entities.pdb
+C:\Users\caglar\Downloads\TreeToner-master\TreeToner-master\TreeToner.Entities\bin\Debug\TreeToner.Entities.dll
+C:\Users\caglar\Downloads\TreeToner-master\TreeToner-master\TreeToner.Entities\bin\Debug\TreeToner.Entities.pdb
+C:\Users\caglar\Downloads\TreeToner-master\TreeToner-master\TreeToner.Entities\bin\Debug\LiteDB.dll
+C:\Users\caglar\Downloads\TreeToner-master\TreeToner-master\TreeToner.Entities\bin\Debug\LiteDB.xml
+C:\Users\caglar\Downloads\TreeToner-master\TreeToner-master\TreeToner.Entities\obj\Debug\TreeToner.Entities.csprojAssemblyReference.cache
+C:\Users\caglar\Downloads\TreeToner-master\TreeToner-master\TreeToner.Entities\obj\Debug\TreeToner.Entities.csproj.CoreCompileInputs.cache
+C:\Users\caglar\Downloads\TreeToner-master\TreeToner-master\TreeToner.Entities\obj\Debug\TreeToner.Entities.csproj.CopyComplete
+C:\Users\caglar\Downloads\TreeToner-master\TreeToner-master\TreeToner.Entities\obj\Debug\TreeToner.Entities.dll
+C:\Users\caglar\Downloads\TreeToner-master\TreeToner-master\TreeToner.Entities\obj\Debug\TreeToner.Entities.pdb
+C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\bin\Debug\TreeToner.Entities.dll
+C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\bin\Debug\TreeToner.Entities.pdb
+C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\bin\Debug\LiteDB.dll
+C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\bin\Debug\LiteDB.xml
+C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\obj\Debug\TreeToner.Entities.csprojAssemblyReference.cache
+C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\obj\Debug\TreeToner.Entities.csproj.CoreCompileInputs.cache
+C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\obj\Debug\TreeToner.Entities.csproj.CopyComplete
+C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\obj\Debug\TreeToner.Entities.dll
+C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\obj\Debug\TreeToner.Entities.pdb
