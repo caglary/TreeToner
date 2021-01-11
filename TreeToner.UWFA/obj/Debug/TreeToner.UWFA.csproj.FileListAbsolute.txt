@@ -157,3 +157,5 @@ C:\Users\caglar\Downloads\TreeToner V2\TreeToner.UWFA\obj\Debug\TreeToner.UWFA.e
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.UWFA\obj\Debug\TreeToner.UWFA.pdb
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.UWFA\bin\Debug\Newtonsoft.Json.dll
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.UWFA\bin\Debug\Newtonsoft.Json.xml
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.UWFA\bin\Debug\Newtonsoft.Json.dll
+C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.UWFA\bin\Debug\Newtonsoft.Json.xml

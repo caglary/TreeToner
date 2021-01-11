@@ -238,7 +238,7 @@
             // 
             this.btnYedekDisari.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnYedekDisari.Image = ((System.Drawing.Image)(resources.GetObject("btnYedekDisari.Image")));
-            this.btnYedekDisari.Location = new System.Drawing.Point(7, 201);
+            this.btnYedekDisari.Location = new System.Drawing.Point(8, 201);
             this.btnYedekDisari.Margin = new System.Windows.Forms.Padding(4);
             this.btnYedekDisari.Name = "btnYedekDisari";
             this.btnYedekDisari.Size = new System.Drawing.Size(120, 60);
@@ -252,7 +252,7 @@
             // 
             this.btnYedekIceri.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnYedekIceri.Image = ((System.Drawing.Image)(resources.GetObject("btnYedekIceri.Image")));
-            this.btnYedekIceri.Location = new System.Drawing.Point(155, 202);
+            this.btnYedekIceri.Location = new System.Drawing.Point(155, 201);
             this.btnYedekIceri.Margin = new System.Windows.Forms.Padding(4);
             this.btnYedekIceri.Name = "btnYedekIceri";
             this.btnYedekIceri.Size = new System.Drawing.Size(120, 60);
@@ -322,16 +322,16 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Location = new System.Drawing.Point(0, 294);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1554, 94);
+            this.groupBox2.Size = new System.Drawing.Size(1554, 104);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
             // 
             // btnGetAll
             // 
             this.btnGetAll.Image = ((System.Drawing.Image)(resources.GetObject("btnGetAll.Image")));
-            this.btnGetAll.Location = new System.Drawing.Point(402, 22);
+            this.btnGetAll.Location = new System.Drawing.Point(403, 22);
             this.btnGetAll.Name = "btnGetAll";
-            this.btnGetAll.Size = new System.Drawing.Size(120, 50);
+            this.btnGetAll.Size = new System.Drawing.Size(130, 60);
             this.btnGetAll.TabIndex = 13;
             this.btnGetAll.Text = "Tüm Liste";
             this.btnGetAll.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -345,7 +345,7 @@
             this.btnKaydet.Location = new System.Drawing.Point(13, 22);
             this.btnKaydet.Margin = new System.Windows.Forms.Padding(4);
             this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(120, 50);
+            this.btnKaydet.Size = new System.Drawing.Size(130, 60);
             this.btnKaydet.TabIndex = 7;
             this.btnKaydet.Text = "Müşteri Ekle";
             this.btnKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -355,10 +355,10 @@
             // btnSorgu
             // 
             this.btnSorgu.Image = ((System.Drawing.Image)(resources.GetObject("btnSorgu.Image")));
-            this.btnSorgu.Location = new System.Drawing.Point(657, 21);
+            this.btnSorgu.Location = new System.Drawing.Point(663, 22);
             this.btnSorgu.Margin = new System.Windows.Forms.Padding(4);
             this.btnSorgu.Name = "btnSorgu";
-            this.btnSorgu.Size = new System.Drawing.Size(120, 50);
+            this.btnSorgu.Size = new System.Drawing.Size(130, 60);
             this.btnSorgu.TabIndex = 12;
             this.btnSorgu.Text = "İşlem Sorgu";
             this.btnSorgu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -368,10 +368,10 @@
             // btnGuncelle
             // 
             this.btnGuncelle.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.Image")));
-            this.btnGuncelle.Location = new System.Drawing.Point(144, 22);
+            this.btnGuncelle.Location = new System.Drawing.Point(143, 22);
             this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(120, 50);
+            this.btnGuncelle.Size = new System.Drawing.Size(130, 60);
             this.btnGuncelle.TabIndex = 8;
             this.btnGuncelle.Text = "Müşteri Güncelle";
             this.btnGuncelle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -381,10 +381,10 @@
             // btnExcel
             // 
             this.btnExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExcel.Image")));
-            this.btnExcel.Location = new System.Drawing.Point(529, 21);
+            this.btnExcel.Location = new System.Drawing.Point(533, 22);
             this.btnExcel.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcel.Name = "btnExcel";
-            this.btnExcel.Size = new System.Drawing.Size(120, 50);
+            this.btnExcel.Size = new System.Drawing.Size(130, 60);
             this.btnExcel.TabIndex = 11;
             this.btnExcel.Text = "Excele Aktar";
             this.btnExcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -394,10 +394,10 @@
             // btnSil
             // 
             this.btnSil.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.Image")));
-            this.btnSil.Location = new System.Drawing.Point(272, 21);
+            this.btnSil.Location = new System.Drawing.Point(273, 22);
             this.btnSil.Margin = new System.Windows.Forms.Padding(4);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(120, 50);
+            this.btnSil.Size = new System.Drawing.Size(130, 60);
             this.btnSil.TabIndex = 9;
             this.btnSil.Text = "Müşteri Sil";
             this.btnSil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -410,7 +410,7 @@
             this.groupBox5.Controls.Add(this.txtArama);
             this.groupBox5.Controls.Add(this.btnArama);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox5.Location = new System.Drawing.Point(0, 388);
+            this.groupBox5.Location = new System.Drawing.Point(0, 398);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(1554, 76);
             this.groupBox5.TabIndex = 22;
