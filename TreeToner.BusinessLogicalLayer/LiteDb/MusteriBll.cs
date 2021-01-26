@@ -99,6 +99,18 @@ namespace TreeToner.BusinessLogicalLayer.LiteDb
                 }
             }
 
+            //Kurum adı sayfasında arama
+            IEnumerable<Musteri> searchResultKurumAdi = _musteriDll.GetAll().Where(c => c.kurumAdi != null).Where(
+                c => c.kurumAdi.ToLower().Contains(paramtext.ToLower()));
+            if (searchResultKurumAdi != null)
+            {
+                foreach (var kurum in searchResultKurumAdi)
+                {
+                    idList.Add(kurum.id);
+                }
+            }
+
+
             IEnumerable<Musteri> searchResultTelefon1 = _musteriDll.GetAll().Where(c => c.telefonI != null).Where(c => c.telefonI.ToLower().Contains(paramtext.ToLower()));
             if (searchResultTelefon1 != null)
             {
