@@ -44,3 +44,12 @@ C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\obj\Debug\TreeToner.En
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\obj\Debug\TreeToner.Entities.csproj.CopyComplete
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\obj\Debug\TreeToner.Entities.dll
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.Entities\obj\Debug\TreeToner.Entities.pdb
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.Entities\bin\Debug\TreeToner.Entities.dll
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.Entities\bin\Debug\TreeToner.Entities.pdb
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.Entities\bin\Debug\LiteDB.dll
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.Entities\bin\Debug\LiteDB.xml
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.Entities\obj\Debug\TreeToner.Entities.csproj.AssemblyReference.cache
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.Entities\obj\Debug\TreeToner.Entities.csproj.CoreCompileInputs.cache
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.Entities\obj\Debug\TreeToner.Entities.csproj.CopyComplete
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.Entities\obj\Debug\TreeToner.Entities.dll
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.Entities\obj\Debug\TreeToner.Entities.pdb

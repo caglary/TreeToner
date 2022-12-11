@@ -159,3 +159,8 @@ C:\Users\caglar\Downloads\TreeToner V2\TreeToner.UWFA\bin\Debug\Newtonsoft.Json.
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.UWFA\bin\Debug\Newtonsoft.Json.xml
 C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.UWFA\bin\Debug\Newtonsoft.Json.dll
 C:\Users\caglar\Documents\GitHub\TreeToner\TreeToner.UWFA\bin\Debug\Newtonsoft.Json.xml
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.UWFA\obj\Debug\TreeToner.UWFA.csproj.AssemblyReference.cache
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.UWFA\obj\Debug\TreeToner.UWFA.csproj.SuggestedBindingRedirects.cache
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.UWFA\obj\Debug\TreeToner.UWFA.csproj.ResolveComReference.cache
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.UWFA\obj\Debug\TreeToner.UWFA.exe
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.UWFA\obj\Debug\TreeToner.UWFA.pdb

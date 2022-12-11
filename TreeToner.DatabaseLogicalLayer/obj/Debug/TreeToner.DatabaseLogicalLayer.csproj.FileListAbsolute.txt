@@ -59,3 +59,14 @@ C:\Users\caglar\Downloads\TreeToner V2\TreeToner.DatabaseLogicalLayer\bin\Debug\
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.DatabaseLogicalLayer\bin\Debug\TreeToner.Entities.pdb
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.DatabaseLogicalLayer\bin\Debug\LiteDB.xml
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.DatabaseLogicalLayer.csproj.CopyComplete
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.DatabaseLogicalLayer\bin\Debug\TreeToner.DatabaseLogicalLayer.dll
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.DatabaseLogicalLayer\bin\Debug\TreeToner.DatabaseLogicalLayer.pdb
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.DatabaseLogicalLayer\bin\Debug\LiteDB.dll
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.DatabaseLogicalLayer\bin\Debug\TreeToner.Entities.dll
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.DatabaseLogicalLayer\bin\Debug\TreeToner.Entities.pdb
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.DatabaseLogicalLayer\bin\Debug\LiteDB.xml
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.DatabaseLogicalLayer.csproj.AssemblyReference.cache
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.DatabaseLogicalLayer.csproj.CoreCompileInputs.cache
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.DatabaseLogicalLayer.csproj.CopyComplete
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.DatabaseLogicalLayer.dll
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.DatabaseLogicalLayer\obj\Debug\TreeToner.DatabaseLogicalLayer.pdb

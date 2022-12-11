@@ -76,3 +76,17 @@ C:\Users\caglar\Downloads\TreeToner V2\TreeToner.BusinessLogicalLayer\obj\Debug\
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.BusinessLogicalLayer\obj\Debug\TreeToner.BusinessLogicalLayer.csproj.CopyComplete
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.BusinessLogicalLayer\obj\Debug\TreeToner.BusinessLogicalLayer.dll
 C:\Users\caglar\Downloads\TreeToner V2\TreeToner.BusinessLogicalLayer\obj\Debug\TreeToner.BusinessLogicalLayer.pdb
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\bin\Debug\TreeToner.BusinessLogicalLayer.dll
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\bin\Debug\TreeToner.BusinessLogicalLayer.pdb
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\bin\Debug\LiteDB.dll
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\bin\Debug\TreeToner.DatabaseLogicalLayer.dll
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\bin\Debug\TreeToner.Entities.dll
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\bin\Debug\TreeToner.DatabaseLogicalLayer.pdb
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\bin\Debug\TreeToner.Entities.pdb
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\bin\Debug\LiteDB.xml
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\obj\Debug\TreeToner.BusinessLogicalLayer.csproj.AssemblyReference.cache
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\obj\Debug\TreeToner.BusinessLogicalLayer.csproj.ResolveComReference.cache
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\obj\Debug\TreeToner.BusinessLogicalLayer.csproj.CoreCompileInputs.cache
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\obj\Debug\TreeToner.BusinessLogicalLayer.csproj.CopyComplete
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\obj\Debug\TreeToner.BusinessLogicalLayer.dll
+C:\Users\muhammed_asel\Desktop\TreeToner-master\TreeToner.BusinessLogicalLayer\obj\Debug\TreeToner.BusinessLogicalLayer.pdb
